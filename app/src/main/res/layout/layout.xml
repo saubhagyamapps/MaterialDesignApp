@@ -1,17 +1,17 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:id="@+id/linearLayout"
-    android:background="@color/colorPrimary"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
- <!--   <HorizontalScrollView
-        android:isScrollContainer="false"
+    <HorizontalScrollView
         android:id="@+id/horizontalScroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:animateLayoutChanges="true"
+        android:background="@color/colorAccent"
+        android:isScrollContainer="false"
         android:orientation="horizontal"
         android:scrollbars="none">
 
@@ -77,11 +77,13 @@
 
         </LinearLayout>
     </HorizontalScrollView>
--->
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp" />
-</LinearLayout>
+        android:layout_below="@id/horizontalScroll"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary" />
+</RelativeLayout>
 
